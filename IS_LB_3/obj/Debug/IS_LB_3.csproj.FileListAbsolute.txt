@@ -1,0 +1,9 @@
+C:\Egarshan\Education\4 курс\Интеллектуальные системы\Лабораторная работа №3\IS_LB_3\IS_LB_3\bin\Debug\IS_LB_3.exe
+C:\Egarshan\Education\4 курс\Интеллектуальные системы\Лабораторная работа №3\IS_LB_3\IS_LB_3\bin\Debug\IS_LB_3.pdb
+C:\Egarshan\Education\4 курс\Интеллектуальные системы\Лабораторная работа №3\IS_LB_3\IS_LB_3\obj\Debug\IS_LB_3.csprojAssemblyReference.cache
+C:\Egarshan\Education\4 курс\Интеллектуальные системы\Лабораторная работа №3\IS_LB_3\IS_LB_3\obj\Debug\IS_LB_3.NumbersReader.resources
+C:\Egarshan\Education\4 курс\Интеллектуальные системы\Лабораторная работа №3\IS_LB_3\IS_LB_3\obj\Debug\IS_LB_3.Properties.Resources.resources
+C:\Egarshan\Education\4 курс\Интеллектуальные системы\Лабораторная работа №3\IS_LB_3\IS_LB_3\obj\Debug\IS_LB_3.csproj.GenerateResource.cache
+C:\Egarshan\Education\4 курс\Интеллектуальные системы\Лабораторная работа №3\IS_LB_3\IS_LB_3\obj\Debug\IS_LB_3.csproj.CoreCompileInputs.cache
+C:\Egarshan\Education\4 курс\Интеллектуальные системы\Лабораторная работа №3\IS_LB_3\IS_LB_3\obj\Debug\IS_LB_3.exe
+C:\Egarshan\Education\4 курс\Интеллектуальные системы\Лабораторная работа №3\IS_LB_3\IS_LB_3\obj\Debug\IS_LB_3.pdb
