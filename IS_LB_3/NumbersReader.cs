@@ -72,7 +72,7 @@ namespace IS_LB_3
 
         void Training() //функция обучения нейросети
         {
-            for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 10000; i++)
             {
                 var RandNum = RND.Next(0, 10);
                 if (RandNum != InputNum)    //если сгенерированная цифра не совпадает с целевой
