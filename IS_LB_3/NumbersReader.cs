@@ -20,8 +20,8 @@ namespace IS_LB_3
 
         int InputNum;
 
-        static int[] weights = new int[SIZE];
-        static int limit = 7;
+        static int[] weights = new int[SIZE];   //массив весов связей
+        static int limit = 7;   //порог определения сопоставления чисел
         static Random RND = new Random(Guid.NewGuid().GetHashCode());
 
         public NumbersReader()
@@ -70,17 +70,17 @@ namespace IS_LB_3
                 TestCounter = 0;
         }
 
-        void Training()
+        void Training() //функция обучения нейросети
         {
             for (int i = 0; i < 10; i++)
             {
                 var RandNum = RND.Next(0, 10);
-                if (RandNum != InputNum)
-                    if (Check(ND.nums[RandNum]))
-                        Dec(ND.nums[RandNum]);
+                if (RandNum != InputNum)    //если сгенерированная цифра не совпадает с целевой
+                    if (Check(ND.nums[RandNum]))    //если цифра определена как верная
+                        Dec(ND.nums[RandNum]);  //уменьшить веса связей, через которые происходило распознавание
                 else
-                    if (!Check(ND.nums[InputNum]))
-                        Inc(ND.nums[InputNum]);
+                    if (!Check(ND.nums[InputNum]))  //если верная цифра отвергнута
+                        Inc(ND.nums[InputNum]); //увелчить веса связей, через которые происходило распознавание
             }
             for (int i = 0; i < 10; i++)
                 Message += i + " is " + Numbers_list.SelectedItem.ToString() + ": " + Check(ND.nums[i]) + '\n';
@@ -89,7 +89,7 @@ namespace IS_LB_3
             Message = "";
         }
 
-        static bool Check(char[] NumberString)
+        static bool Check(char[] NumberString)  //функция распознавания (сопоставления матриц цифр)
         {
             var sum = 0;
             for (int i = 0; i < SIZE; i++)
@@ -105,14 +105,14 @@ namespace IS_LB_3
             for (int i = 0; i < SIZE; i++)
                 if (int.Parse(NumberString[i].ToString()) == 1)
                     weights[i]--;
-        }
+        }   //функция уменьшения весов связей
         
         static void Inc(char[] NumberString)
         {
             for (int i = 0; i < SIZE; i++)
                 if (int.Parse(NumberString[i].ToString()) == 1)
                     weights[i]++;
-        }
+        }   //функция увеличения весов связей
 
         void DrawCipher(int cipher, char[] array, GroupBox GB)
         {
